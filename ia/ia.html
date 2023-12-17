@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Jing Huang" />
+  <meta name="dcterms.date" content="2023-12-03" />
+  <title>Relationship Between the Acceleration and Mass</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    div.abstract {
+      margin: 2em 2em 2em 2em;
+      text-align: left;
+      font-size: 85%;
+    }
+    div.abstract-title {
+      font-weight: bold;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 0.5em;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Relationship Between the Acceleration and Mass</h1>
+<p class="author">Jing Huang</p>
+<p class="date">2023-12-03</p>
+<div class="abstract">
+<div class="abstract-title">Abstract</div>
+<p>The acceleration and the mass are two fundamental physics quantities
+that I found interesting. Every single object has mass as its intrinsic
+property, while every moving object has acceleration. When I was in
+middle school, our physics teacher told us that the mass will affect how
+far the car can move with the given constant acceleration. It’s not hard
+for me to imagine but really hard for me to explain why. Then in high
+school I learned about kinematics. I began to realize maybe it’s because
+there are some sorts of relationship between the acceleration of the
+object and the object’s mass since this explains everything.</p>
+<p>The Newton’s second law enabled me to make a link from the theory we
+learned in class and my question. Therefore I attempted to fond out the
+relationship between the acceleration and the mass.</p>
+</div>
+</header>
+<h1 id="theoretical-information">Theoretical Information</h1>
+<h2 id="basis-theory">Basis Theory</h2>
+<p>The Newton’s second law of motion is been used. The law:</p>
+<blockquote>
+<p>When a body is acted upon by a net force, the body’s acceleration
+multiplied by its mass is equal to the net force.</p>
+</blockquote>
+<p>can be represented in equation as: <span
+class="math display"><em>F</em> = <em>m</em><em>a</em>.</span></p>
+<p>In the experiment I designed, the force is kept unchanged to make
+life easier, and thus we can deduct: <span class="math display">$$a =
+\frac{F}{m}.$$</span> This leads to our consequence that the
+acceleration and the mass is inversely proportional.</p>
+<h2 id="theoretical-deduction">Theoretical Deduction</h2>
+<p>The equipments are placed as the figure below:</p>
+<figure>
+<img src="equip.jpeg" alt="The equipment used in the experiment." />
+<figcaption aria-hidden="true">The equipment used in the
+experiment.</figcaption>
+</figure>
+<p>Since the two parts of the equipment is connected by a string and
+their acceleration is the same, we can see them as one object, and there
+is two forces acting on it:</p>
+<ol>
+<li><p>The weight of part b of the object <span
+class="math inline"><em>W</em><sub><em>b</em></sub></span>;</p></li>
+<li><p>The friction exerted on part a of the object <span
+class="math inline"><em>f</em><sub><em>d</em></sub></span>.</p></li>
+</ol>
+<p>Therefore, we can take these variables and apply them using Newton’s
+second law: <span class="math display">$$a = \frac{F_n}{m}.$$</span></p>
+<p>To simplify, we also assume that the surface is perfectly smooth and
+has no friction force <span
+class="math inline"><em>f</em><sub><em>d</em></sub> = 0N</span>. So the
+net force of this object is: <span
+class="math display"><em>F</em><sub><em>n</em></sub> = <em>W</em> + <em>f</em><sub><em>d</em></sub> = <em>W</em>.</span></p>
+<p>So now the relationship we found between the acceleration and the
+mass is: <span class="math display">$$a = \frac{W}{m} = \frac{m_b \cdot
+g}{m_a + m_b}.$$</span> The acceleration is equivalent to the quotient
+of the product of the object b’s mass and gravitational acceleration and
+the total mass of the object.</p>
+<h1 id="variables">Variables</h1>
+<h2 id="independent-variables">Independent Variables</h2>
+<p>We say a variable is independent means that the variable that changes
+and affects the value of the variable which we are going to evaluate.
+Here, it is the mass of the entire object, or more specifically, the
+mass of the object a which is represented as <span
+class="math inline"><em>m</em><sub><em>a</em></sub></span>. In this
+experiment, this variable will be changed by adding heavy objects which
+mass is a constant on the object a. Its mass is measured with a
+electronic scale.</p>
+<h2 id="dependent-variables">Dependent Variables</h2>
+<p>The dependent variable changes according to the independent variable,
+and in our case is the acceleration <span
+class="math inline"><em>a</em></span>. We use a sensor to plot its
+speed-time graph, and calculate the acceleration by applying <span
+class="math inline">$a = \frac{v}{t}$</span> to it.</p>
+<h2 id="controlled-variables">Controlled Variables</h2>
+<p>The mass of the object b is controlled to ensure the initial force is
+the same.</p>
+</body>
+</html>
